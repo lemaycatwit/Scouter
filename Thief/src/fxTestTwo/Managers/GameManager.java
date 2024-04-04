@@ -7,7 +7,7 @@ import fxTestTwo.Tiles.Tile;
 
 public class GameManager {
 
-	public static GameState current = GameState.Load;
+	public GameState current = GameState.Load;
 	static int width = 20;
 	static int height = 10;
 	static ArrayList<Tile> map;
@@ -17,7 +17,6 @@ public class GameManager {
 		loadMap(width,height);
 		fxMap();
 		//createPlayer();
-		current = GameState.Play;
 		//inst = this;
 	}
 	public static void loadMap(int x,int y) {
