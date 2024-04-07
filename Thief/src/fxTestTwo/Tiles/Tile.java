@@ -1,9 +1,20 @@
 package fxTestTwo.Tiles;
 
+import fxTestTwo.Player.Bonnet;
+
 public class Tile {
 	
 	private int y,x;
-	public String glyph = ".";
+	public String glyph() {
+		if(bon==null) {
+			return ".";
+		}
+		else {
+			return "@";
+		}
+	}
+	public Bonnet bon;	// if it is occupied
+	
 public Tile(int x, int y) {
 	this.setX(x);
 	this.setY(y);

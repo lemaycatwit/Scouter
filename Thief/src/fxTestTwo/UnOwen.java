@@ -4,23 +4,24 @@ import fxTestTwo.Managers.GameManager;
 import fxTestTwo.Player.Bonnet;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class UnOwen extends Application {
+public class UnOwen {
 
+	
 	public static void main(String[] args) {
 		GameManager gm = new GameManager();
-		Bonnet bon = gm.createPlayer();
-		launch(args);
+		gm.init(args);
+		
+		
+		
 	}
 
-	@Override
-	public void start(Stage primaryStage) throws Exception {
-		primaryStage.setTitle("Rogue-Like");
-		final StackPane root = new StackPane();
-		primaryStage.setScene(new Scene(root, 300, 250));
-		primaryStage.show();
-	}
+
 
 }
