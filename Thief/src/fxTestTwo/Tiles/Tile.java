@@ -6,12 +6,18 @@ public class Tile {
 	
 	private int y,x;
 	public String glyph() {
+		try {
 		if(bon==null) {
 			return ".";
 		}
-		else {
+		else if(bon.real(this)){
 			return "@";
 		}
+		}
+		catch(NullPointerException ex) {
+			return ".";
+		}
+		return ".";
 	}
 	public Bonnet bon;	// if it is occupied
 	
@@ -21,6 +27,9 @@ public Tile(int x, int y) {
 }
 public Tile() {
 	this(0,0);
+}
+public void exited() {
+	this.bon=null;
 }
 public int getY() {
 	return y;

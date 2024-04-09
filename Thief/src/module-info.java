@@ -8,6 +8,7 @@ module Thief {
 	requires javafx.controls;
 	requires javafx.fxml;
 	requires javafx.graphics;
+	requires java.desktop;
 	opens pack;
 	opens fxTestTwo;
 	opens fxTestTwo.Managers;
