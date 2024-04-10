@@ -16,7 +16,7 @@ import javafx.scene.input.KeyEvent;
 public class Bonnet extends JFrame {
 	private GameManager gm;
 
-	private PlayerStates state;
+	
 	private Tile ti;
 	
 	private int hp,str,lvl,armr;

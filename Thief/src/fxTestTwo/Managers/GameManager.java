@@ -24,7 +24,7 @@ public class GameManager extends Application{
 	static int width = 50;
 	static int height = 20;
 	public ArrayList<Tile> map;
-	public GameManager inst;
+	//public GameManager inst;
 	public Bonnet ply;
 	
 	public Stage stg;
@@ -63,7 +63,8 @@ public class GameManager extends Application{
 	}
 	public Tile getTile(int x, int y) {
 		if(map==null) {loadMap(width,height);
-		System.out.println("new map");}
+		//System.out.println("new map");
+		}
 		for(Tile ti : map) {
 			if(ti.getX()==x&&ti.getY()==y) {
 				return ti;
@@ -136,6 +137,7 @@ public class GameManager extends Application{
 		if(tii==null) {return;}
 		
 		bo.MoveTile(tii);
+		// if you go to 0,0, print out goku
 		
 		//System.out.println("work?"+x+" "+y);
 		repaint(stg,rtg);
