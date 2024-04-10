@@ -1,18 +1,13 @@
 package fxTestTwo.Player;
 
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyListener;
 
-import javax.swing.ActionMap;
-import javax.swing.InputMap;
-import javax.swing.JComponent;
 import javax.swing.JFrame;
-import javax.swing.KeyStroke;
+
 
 import fxTestTwo.Managers.GameManager;
 import fxTestTwo.Tiles.Tile;
-import javafx.scene.input.KeyEvent;
 
+@SuppressWarnings("serial")
 public class Bonnet extends JFrame {
 	private GameManager gm;
 

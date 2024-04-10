@@ -5,10 +5,7 @@ import java.util.ArrayList;
 import fxTestTwo.Player.Bonnet;
 import fxTestTwo.Tiles.Tile;
 import javafx.application.Application;
-import javafx.geometry.Bounds;
-import javafx.geometry.Pos;
-import javafx.geometry.VPos;
-import javafx.scene.Node;
+
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
